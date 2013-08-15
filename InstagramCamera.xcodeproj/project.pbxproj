@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA1085E41762C46100CAA7C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1085E31762C46100CAA7C5 /* UIKit.framework */; };
+		FA1085E61762C46100CAA7C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1085E51762C46100CAA7C5 /* Foundation.framework */; };
+		FA1085E81762C46100CAA7C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1085E71762C46100CAA7C5 /* CoreGraphics.framework */; };
+		FA1085EA1762C46100CAA7C5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1085E91762C46100CAA7C5 /* CoreData.framework */; };
+		FA1086101762C46200CAA7C5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA10860F1762C46200CAA7C5 /* SenTestingKit.framework */; };
+		FA1086111762C46200CAA7C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1085E31762C46100CAA7C5 /* UIKit.framework */; };
+		FA1086121762C46200CAA7C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1085E51762C46100CAA7C5 /* Foundation.framework */; };
+		FA1086131762C46200CAA7C5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1085E91762C46100CAA7C5 /* CoreData.framework */; };
+		FA5589CE17BC7B5600732F3C /* UIImageView+GeometryConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5589CD17BC7B5600732F3C /* UIImageView+GeometryConversion.m */; };
+		FA5589D017BC7BD000732F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5589CF17BC7BD000732F3C /* main.m */; };
+		FA5589D317BC7D7F00732F3C /* InstagramCamera-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA5589D117BC7D7F00732F3C /* InstagramCamera-Info.plist */; };
+		FA5589D617BC7DD000732F3C /* SSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5589D517BC7DD000732F3C /* SSAppDelegate.m */; };
+		FA5589D717BC7DE400732F3C /* SSAppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = FA5589D417BC7DD000732F3C /* SSAppDelegate.h */; };
+		FA5589D817BC7DF400732F3C /* SSAddObjectViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = FA5589BF17BC7A0900732F3C /* SSAddObjectViewController.h */; };
+		FA5589D917BC7DF400732F3C /* SSAddObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5589C017BC7A0900732F3C /* SSAddObjectViewController.m */; };
+		FA5589DA17BC7DF400732F3C /* SSCameraViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = FA5589AD17BC78AF00732F3C /* SSCameraViewController.h */; };
+		FA5589DB17BC7DF400732F3C /* SSCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5589AE17BC78AF00732F3C /* SSCameraViewController.m */; };
+		FA5589DC17BC7E0000732F3C /* UIImageView+GeometryConversion.h in Sources */ = {isa = PBXBuildFile; fileRef = FA5589CC17BC7B5600732F3C /* UIImageView+GeometryConversion.h */; };
+		FA5589DD17BC7E0000732F3C /* SSAssetLibraryFactory.h in Sources */ = {isa = PBXBuildFile; fileRef = FA5589B017BC78D400732F3C /* SSAssetLibraryFactory.h */; };
+		FA5589DE17BC7E0000732F3C /* SSAssetLibraryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5589B117BC78D400732F3C /* SSAssetLibraryFactory.m */; };
+		FA5589DF17BC7E0000732F3C /* SSLoadAsset.h in Sources */ = {isa = PBXBuildFile; fileRef = FA5589B217BC78D400732F3C /* SSLoadAsset.h */; };
+		FA5589E017BC7E0000732F3C /* SSLoadAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5589B317BC78D400732F3C /* SSLoadAsset.m */; };
+		FA5589E117BC7E0000732F3C /* SSUtils.h in Sources */ = {isa = PBXBuildFile; fileRef = FA5589B417BC78D400732F3C /* SSUtils.h */; };
+		FA5589E217BC7E0000732F3C /* SSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5589B517BC78D400732F3C /* SSUtils.m */; };
+		FA5589E317BC7E0000732F3C /* ALAsset+SSAssetEqual.h in Sources */ = {isa = PBXBuildFile; fileRef = FA5589A717BC786900732F3C /* ALAsset+SSAssetEqual.h */; };
+		FA5589E417BC7E0000732F3C /* ALAsset+SSAssetEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5589A817BC786900732F3C /* ALAsset+SSAssetEqual.m */; };
+		FA5589E917BC7E5400732F3C /* camera_shooter.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5589E517BC7E5400732F3C /* camera_shooter.png */; };
+		FA5589EA17BC7E5400732F3C /* Camera-256.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5589E617BC7E5400732F3C /* Camera-256.png */; };
+		FA5589EB17BC7E5400732F3C /* camera-change-input.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5589E717BC7E5400732F3C /* camera-change-input.png */; };
+		FA5589EC17BC7E5400732F3C /* camera-shotter.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5589E817BC7E5400732F3C /* camera-shotter.png */; };
+		FA5589F817BC7E7000732F3C /* flash-camera-auto.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5589ED17BC7E7000732F3C /* flash-camera-auto.png */; };
+		FA5589F917BC7E7000732F3C /* flash-camera-off.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5589EE17BC7E7000732F3C /* flash-camera-off.png */; };
+		FA5589FA17BC7E7000732F3C /* flash-camera-on.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5589EF17BC7E7000732F3C /* flash-camera-on.png */; };
+		FA5589FB17BC7E7000732F3C /* gallery_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5589F017BC7E7000732F3C /* gallery_icon.png */; };
+		FA5589FC17BC7E7000732F3C /* gallery-panel.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5589F117BC7E7000732F3C /* gallery-panel.png */; };
+		FA5589FD17BC7E7000732F3C /* gallery-photo-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5589F217BC7E7000732F3C /* gallery-photo-selected.png */; };
+		FA5589FE17BC7E7000732F3C /* grid-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5589F317BC7E7000732F3C /* grid-camera.png */; };
+		FA5589FF17BC7E7000732F3C /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5589F417BC7E7000732F3C /* header.png */; };
+		FA558A0217BC7E7000732F3C /* instagram-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5589F717BC7E7000732F3C /* instagram-icon.png */; };
+		FA558A0717BC7E8B00732F3C /* panel-header.png in Resources */ = {isa = PBXBuildFile; fileRef = FA558A0317BC7E8B00732F3C /* panel-header.png */; };
+		FA558A0817BC7E8B00732F3C /* panel-vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = FA558A0417BC7E8B00732F3C /* panel-vertical.png */; };
+		FA558A0917BC7E8B00732F3C /* photo-library-panel.png in Resources */ = {isa = PBXBuildFile; fileRef = FA558A0517BC7E8B00732F3C /* photo-library-panel.png */; };
+		FA558A0C17BC84AA00732F3C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA558A0B17BC84AA00732F3C /* Default-568h@2x.png */; };
+		FA558A0E17BC858200732F3C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA558A0D17BC858200732F3C /* Default@2x.png */; };
+		FA558A1017BC85B700732F3C /* InstagramCamera-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA558A0F17BC85B700732F3C /* InstagramCamera-568h@2x.png */; };
+		FA558A1317BC86D800732F3C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA558A1117BC86D800732F3C /* MainStoryboard.storyboard */; };
+		FA95297F17A8B90800A69E8E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA95297E17A8B90800A69E8E /* CFNetwork.framework */; };
+		FA95298117A8B92800A69E8E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA95298017A8B92800A69E8E /* Security.framework */; };
+		FA95298317A8B93200A69E8E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA95298217A8B93200A69E8E /* MobileCoreServices.framework */; };
+		FA95299717A8BAFF00A69E8E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA95299617A8BAFF00A69E8E /* SystemConfiguration.framework */; };
+		FAB015C517751DF5004CB0F8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB015C417751DF5004CB0F8 /* CoreMedia.framework */; };
+		FAB015C717751E04004CB0F8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB015C617751E04004CB0F8 /* AVFoundation.framework */; };
+		FAB015C917751E12004CB0F8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB015C817751E12004CB0F8 /* ImageIO.framework */; };
+		FAB015DB1775D3B6004CB0F8 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB015DA1775D3B6004CB0F8 /* AssetsLibrary.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA1086141762C46200CAA7C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA1085D81762C46100CAA7C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA1085DF1762C46100CAA7C5;
+			remoteInfo = SmartStuffSwap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA1085E01762C46100CAA7C5 /* InstagramCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1085E31762C46100CAA7C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FA1085E51762C46100CAA7C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA1085E71762C46100CAA7C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA1085E91762C46100CAA7C5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FA10860E1762C46200CAA7C5 /* InstagramCameraTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramCameraTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA10860F1762C46200CAA7C5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FA5589A717BC786900732F3C /* ALAsset+SSAssetEqual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ALAsset+SSAssetEqual.h"; path = "InstagramCamera/ALAsset+SSAssetEqual.h"; sourceTree = SOURCE_ROOT; };
+		FA5589A817BC786900732F3C /* ALAsset+SSAssetEqual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ALAsset+SSAssetEqual.m"; path = "InstagramCamera/ALAsset+SSAssetEqual.m"; sourceTree = SOURCE_ROOT; };
+		FA5589AD17BC78AF00732F3C /* SSCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSCameraViewController.h; path = InstagramCamera/SSCameraViewController.h; sourceTree = SOURCE_ROOT; };
+		FA5589AE17BC78AF00732F3C /* SSCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSCameraViewController.m; path = InstagramCamera/SSCameraViewController.m; sourceTree = SOURCE_ROOT; };
+		FA5589B017BC78D400732F3C /* SSAssetLibraryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSAssetLibraryFactory.h; path = InstagramCamera/SSAssetLibraryFactory.h; sourceTree = SOURCE_ROOT; };
+		FA5589B117BC78D400732F3C /* SSAssetLibraryFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSAssetLibraryFactory.m; path = InstagramCamera/SSAssetLibraryFactory.m; sourceTree = SOURCE_ROOT; };
+		FA5589B217BC78D400732F3C /* SSLoadAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSLoadAsset.h; path = InstagramCamera/SSLoadAsset.h; sourceTree = SOURCE_ROOT; };
+		FA5589B317BC78D400732F3C /* SSLoadAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSLoadAsset.m; path = InstagramCamera/SSLoadAsset.m; sourceTree = SOURCE_ROOT; };
+		FA5589B417BC78D400732F3C /* SSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSUtils.h; path = InstagramCamera/SSUtils.h; sourceTree = SOURCE_ROOT; };
+		FA5589B517BC78D400732F3C /* SSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSUtils.m; path = InstagramCamera/SSUtils.m; sourceTree = SOURCE_ROOT; };
+		FA5589BF17BC7A0900732F3C /* SSAddObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSAddObjectViewController.h; path = InstagramCamera/SSAddObjectViewController.h; sourceTree = SOURCE_ROOT; };
+		FA5589C017BC7A0900732F3C /* SSAddObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSAddObjectViewController.m; path = InstagramCamera/SSAddObjectViewController.m; sourceTree = SOURCE_ROOT; };
+		FA5589CC17BC7B5600732F3C /* UIImageView+GeometryConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+GeometryConversion.h"; path = "InstagramCamera/UIImageView+GeometryConversion.h"; sourceTree = SOURCE_ROOT; };
+		FA5589CD17BC7B5600732F3C /* UIImageView+GeometryConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+GeometryConversion.m"; path = "InstagramCamera/UIImageView+GeometryConversion.m"; sourceTree = SOURCE_ROOT; };
+		FA5589CF17BC7BD000732F3C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = InstagramCamera/main.m; sourceTree = "<group>"; };
+		FA5589D117BC7D7F00732F3C /* InstagramCamera-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "InstagramCamera-Info.plist"; path = "InstagramCamera/InstagramCamera-Info.plist"; sourceTree = "<group>"; };
+		FA5589D217BC7D7F00732F3C /* InstagramCamera-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "InstagramCamera-Prefix.pch"; path = "InstagramCamera/InstagramCamera-Prefix.pch"; sourceTree = "<group>"; };
+		FA5589D417BC7DD000732F3C /* SSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSAppDelegate.h; path = InstagramCamera/SSAppDelegate.h; sourceTree = "<group>"; };
+		FA5589D517BC7DD000732F3C /* SSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSAppDelegate.m; path = InstagramCamera/SSAppDelegate.m; sourceTree = "<group>"; };
+		FA5589E517BC7E5400732F3C /* camera_shooter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera_shooter.png; path = InstagramCamera/camera_shooter.png; sourceTree = SOURCE_ROOT; };
+		FA5589E617BC7E5400732F3C /* Camera-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Camera-256.png"; path = "InstagramCamera/Camera-256.png"; sourceTree = SOURCE_ROOT; };
+		FA5589E717BC7E5400732F3C /* camera-change-input.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-change-input.png"; path = "InstagramCamera/camera-change-input.png"; sourceTree = SOURCE_ROOT; };
+		FA5589E817BC7E5400732F3C /* camera-shotter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-shotter.png"; path = "InstagramCamera/camera-shotter.png"; sourceTree = SOURCE_ROOT; };
+		FA5589ED17BC7E7000732F3C /* flash-camera-auto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "flash-camera-auto.png"; path = "InstagramCamera/flash-camera-auto.png"; sourceTree = SOURCE_ROOT; };
+		FA5589EE17BC7E7000732F3C /* flash-camera-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "flash-camera-off.png"; path = "InstagramCamera/flash-camera-off.png"; sourceTree = SOURCE_ROOT; };
+		FA5589EF17BC7E7000732F3C /* flash-camera-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "flash-camera-on.png"; path = "InstagramCamera/flash-camera-on.png"; sourceTree = SOURCE_ROOT; };
+		FA5589F017BC7E7000732F3C /* gallery_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gallery_icon.png; path = InstagramCamera/gallery_icon.png; sourceTree = SOURCE_ROOT; };
+		FA5589F117BC7E7000732F3C /* gallery-panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gallery-panel.png"; path = "InstagramCamera/gallery-panel.png"; sourceTree = SOURCE_ROOT; };
+		FA5589F217BC7E7000732F3C /* gallery-photo-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gallery-photo-selected.png"; path = "InstagramCamera/gallery-photo-selected.png"; sourceTree = SOURCE_ROOT; };
+		FA5589F317BC7E7000732F3C /* grid-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grid-camera.png"; path = "InstagramCamera/grid-camera.png"; sourceTree = SOURCE_ROOT; };
+		FA5589F417BC7E7000732F3C /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = header.png; path = InstagramCamera/header.png; sourceTree = SOURCE_ROOT; };
+		FA5589F517BC7E7000732F3C /* imageAddObject.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imageAddObject.png; path = InstagramCamera/imageAddObject.png; sourceTree = SOURCE_ROOT; };
+		FA5589F617BC7E7000732F3C /* IMG_1034.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1034.JPG; path = InstagramCamera/IMG_1034.JPG; sourceTree = SOURCE_ROOT; };
+		FA5589F717BC7E7000732F3C /* instagram-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "instagram-icon.png"; path = "InstagramCamera/instagram-icon.png"; sourceTree = SOURCE_ROOT; };
+		FA558A0317BC7E8B00732F3C /* panel-header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "panel-header.png"; path = "InstagramCamera/panel-header.png"; sourceTree = SOURCE_ROOT; };
+		FA558A0417BC7E8B00732F3C /* panel-vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "panel-vertical.png"; path = "InstagramCamera/panel-vertical.png"; sourceTree = SOURCE_ROOT; };
+		FA558A0517BC7E8B00732F3C /* photo-library-panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "photo-library-panel.png"; path = "InstagramCamera/photo-library-panel.png"; sourceTree = SOURCE_ROOT; };
+		FA558A0617BC7E8B00732F3C /* photoUser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photoUser.png; path = InstagramCamera/photoUser.png; sourceTree = SOURCE_ROOT; };
+		FA558A0B17BC84AA00732F3C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		FA558A0D17BC858200732F3C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		FA558A0F17BC85B700732F3C /* InstagramCamera-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InstagramCamera-568h@2x.png"; sourceTree = "<group>"; };
+		FA558A1217BC86D800732F3C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = InstagramCamera/en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		FA95297E17A8B90800A69E8E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FA95298017A8B92800A69E8E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FA95298217A8B93200A69E8E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FA95299617A8BAFF00A69E8E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FAB015C417751DF5004CB0F8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		FAB015C617751E04004CB0F8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FAB015C817751E12004CB0F8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		FAB015DA1775D3B6004CB0F8 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA1085DD1762C46100CAA7C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA95299717A8BAFF00A69E8E /* SystemConfiguration.framework in Frameworks */,
+				FA95298317A8B93200A69E8E /* MobileCoreServices.framework in Frameworks */,
+				FA95298117A8B92800A69E8E /* Security.framework in Frameworks */,
+				FA95297F17A8B90800A69E8E /* CFNetwork.framework in Frameworks */,
+				FAB015DB1775D3B6004CB0F8 /* AssetsLibrary.framework in Frameworks */,
+				FAB015C917751E12004CB0F8 /* ImageIO.framework in Frameworks */,
+				FAB015C717751E04004CB0F8 /* AVFoundation.framework in Frameworks */,
+				FAB015C517751DF5004CB0F8 /* CoreMedia.framework in Frameworks */,
+				FA1085E41762C46100CAA7C5 /* UIKit.framework in Frameworks */,
+				FA1085E61762C46100CAA7C5 /* Foundation.framework in Frameworks */,
+				FA1085E81762C46100CAA7C5 /* CoreGraphics.framework in Frameworks */,
+				FA1085EA1762C46100CAA7C5 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA10860A1762C46200CAA7C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1086101762C46200CAA7C5 /* SenTestingKit.framework in Frameworks */,
+				FA1086111762C46200CAA7C5 /* UIKit.framework in Frameworks */,
+				FA1086121762C46200CAA7C5 /* Foundation.framework in Frameworks */,
+				FA1086131762C46200CAA7C5 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA1085D71762C46100CAA7C5 = {
+			isa = PBXGroup;
+			children = (
+				FA558A1117BC86D800732F3C /* MainStoryboard.storyboard */,
+				FA558A0F17BC85B700732F3C /* InstagramCamera-568h@2x.png */,
+				FA5589D417BC7DD000732F3C /* SSAppDelegate.h */,
+				FA5589D517BC7DD000732F3C /* SSAppDelegate.m */,
+				FA5589D117BC7D7F00732F3C /* InstagramCamera-Info.plist */,
+				FA5589D217BC7D7F00732F3C /* InstagramCamera-Prefix.pch */,
+				FA5589CF17BC7BD000732F3C /* main.m */,
+				FA1085EB1762C46100CAA7C5 /* InstCamera */,
+				FA1085E21762C46100CAA7C5 /* Frameworks */,
+				FA1085E11762C46100CAA7C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA1085E11762C46100CAA7C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA1085E01762C46100CAA7C5 /* InstagramCamera.app */,
+				FA10860E1762C46200CAA7C5 /* InstagramCameraTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA1085E21762C46100CAA7C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA95299617A8BAFF00A69E8E /* SystemConfiguration.framework */,
+				FA95298217A8B93200A69E8E /* MobileCoreServices.framework */,
+				FA95298017A8B92800A69E8E /* Security.framework */,
+				FA95297E17A8B90800A69E8E /* CFNetwork.framework */,
+				FAB015DA1775D3B6004CB0F8 /* AssetsLibrary.framework */,
+				FAB015C817751E12004CB0F8 /* ImageIO.framework */,
+				FAB015C617751E04004CB0F8 /* AVFoundation.framework */,
+				FAB015C417751DF5004CB0F8 /* CoreMedia.framework */,
+				FA1085E31762C46100CAA7C5 /* UIKit.framework */,
+				FA1085E51762C46100CAA7C5 /* Foundation.framework */,
+				FA1085E71762C46100CAA7C5 /* CoreGraphics.framework */,
+				FA1085E91762C46100CAA7C5 /* CoreData.framework */,
+				FA10860F1762C46200CAA7C5 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA1085EB1762C46100CAA7C5 /* InstCamera */ = {
+			isa = PBXGroup;
+			children = (
+				FAB015E41778774B004CB0F8 /* Utils */,
+				FA5E38D617651F8800C55A37 /* Controller */,
+				FA1085EC1762C46100CAA7C5 /* Supporting Files */,
+			);
+			name = InstCamera;
+			path = SmartStuffSwap;
+			sourceTree = "<group>";
+		};
+		FA1085EC1762C46100CAA7C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA558A0D17BC858200732F3C /* Default@2x.png */,
+				FA558A0B17BC84AA00732F3C /* Default-568h@2x.png */,
+				FA10862A1762D1C500CAA7C5 /* img */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA10862A1762D1C500CAA7C5 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				FA558A0317BC7E8B00732F3C /* panel-header.png */,
+				FA558A0417BC7E8B00732F3C /* panel-vertical.png */,
+				FA558A0517BC7E8B00732F3C /* photo-library-panel.png */,
+				FA558A0617BC7E8B00732F3C /* photoUser.png */,
+				FA5589ED17BC7E7000732F3C /* flash-camera-auto.png */,
+				FA5589EE17BC7E7000732F3C /* flash-camera-off.png */,
+				FA5589EF17BC7E7000732F3C /* flash-camera-on.png */,
+				FA5589F017BC7E7000732F3C /* gallery_icon.png */,
+				FA5589F117BC7E7000732F3C /* gallery-panel.png */,
+				FA5589F217BC7E7000732F3C /* gallery-photo-selected.png */,
+				FA5589F317BC7E7000732F3C /* grid-camera.png */,
+				FA5589F417BC7E7000732F3C /* header.png */,
+				FA5589F517BC7E7000732F3C /* imageAddObject.png */,
+				FA5589F617BC7E7000732F3C /* IMG_1034.JPG */,
+				FA5589F717BC7E7000732F3C /* instagram-icon.png */,
+				FA5589E517BC7E5400732F3C /* camera_shooter.png */,
+				FA5589E617BC7E5400732F3C /* Camera-256.png */,
+				FA5589E717BC7E5400732F3C /* camera-change-input.png */,
+				FA5589E817BC7E5400732F3C /* camera-shotter.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+		FA5E38D617651F8800C55A37 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA5589BF17BC7A0900732F3C /* SSAddObjectViewController.h */,
+				FA5589C017BC7A0900732F3C /* SSAddObjectViewController.m */,
+				FA5589AD17BC78AF00732F3C /* SSCameraViewController.h */,
+				FA5589AE17BC78AF00732F3C /* SSCameraViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FAB015E41778774B004CB0F8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FA5589CC17BC7B5600732F3C /* UIImageView+GeometryConversion.h */,
+				FA5589CD17BC7B5600732F3C /* UIImageView+GeometryConversion.m */,
+				FA5589B017BC78D400732F3C /* SSAssetLibraryFactory.h */,
+				FA5589B117BC78D400732F3C /* SSAssetLibraryFactory.m */,
+				FA5589B217BC78D400732F3C /* SSLoadAsset.h */,
+				FA5589B317BC78D400732F3C /* SSLoadAsset.m */,
+				FA5589B417BC78D400732F3C /* SSUtils.h */,
+				FA5589B517BC78D400732F3C /* SSUtils.m */,
+				FA5589A717BC786900732F3C /* ALAsset+SSAssetEqual.h */,
+				FA5589A817BC786900732F3C /* ALAsset+SSAssetEqual.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA1085DF1762C46100CAA7C5 /* InstagramCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1086211762C46200CAA7C5 /* Build configuration list for PBXNativeTarget "InstagramCamera" */;
+			buildPhases = (
+				FA1085DC1762C46100CAA7C5 /* Sources */,
+				FA1085DD1762C46100CAA7C5 /* Frameworks */,
+				FA1085DE1762C46100CAA7C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstagramCamera;
+			productName = SmartStuffSwap;
+			productReference = FA1085E01762C46100CAA7C5 /* InstagramCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA10860D1762C46200CAA7C5 /* InstagramCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1086241762C46200CAA7C5 /* Build configuration list for PBXNativeTarget "InstagramCameraTests" */;
+			buildPhases = (
+				FA1086091762C46200CAA7C5 /* Sources */,
+				FA10860A1762C46200CAA7C5 /* Frameworks */,
+				FA10860B1762C46200CAA7C5 /* Resources */,
+				FA10860C1762C46200CAA7C5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA1086151762C46200CAA7C5 /* PBXTargetDependency */,
+			);
+			name = InstagramCameraTests;
+			productName = SmartStuffSwapTests;
+			productReference = FA10860E1762C46200CAA7C5 /* InstagramCameraTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA1085D81762C46100CAA7C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SS;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = AlexSem;
+			};
+			buildConfigurationList = FA1085DB1762C46100CAA7C5 /* Build configuration list for PBXProject "InstagramCamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA1085D71762C46100CAA7C5;
+			productRefGroup = FA1085E11762C46100CAA7C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA1085DF1762C46100CAA7C5 /* InstagramCamera */,
+				FA10860D1762C46200CAA7C5 /* InstagramCameraTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA1085DE1762C46100CAA7C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5589D317BC7D7F00732F3C /* InstagramCamera-Info.plist in Resources */,
+				FA5589E917BC7E5400732F3C /* camera_shooter.png in Resources */,
+				FA5589EA17BC7E5400732F3C /* Camera-256.png in Resources */,
+				FA5589EB17BC7E5400732F3C /* camera-change-input.png in Resources */,
+				FA5589EC17BC7E5400732F3C /* camera-shotter.png in Resources */,
+				FA5589F817BC7E7000732F3C /* flash-camera-auto.png in Resources */,
+				FA5589F917BC7E7000732F3C /* flash-camera-off.png in Resources */,
+				FA5589FA17BC7E7000732F3C /* flash-camera-on.png in Resources */,
+				FA5589FB17BC7E7000732F3C /* gallery_icon.png in Resources */,
+				FA5589FC17BC7E7000732F3C /* gallery-panel.png in Resources */,
+				FA5589FD17BC7E7000732F3C /* gallery-photo-selected.png in Resources */,
+				FA5589FE17BC7E7000732F3C /* grid-camera.png in Resources */,
+				FA5589FF17BC7E7000732F3C /* header.png in Resources */,
+				FA558A0217BC7E7000732F3C /* instagram-icon.png in Resources */,
+				FA558A0717BC7E8B00732F3C /* panel-header.png in Resources */,
+				FA558A0817BC7E8B00732F3C /* panel-vertical.png in Resources */,
+				FA558A0917BC7E8B00732F3C /* photo-library-panel.png in Resources */,
+				FA558A0C17BC84AA00732F3C /* Default-568h@2x.png in Resources */,
+				FA558A0E17BC858200732F3C /* Default@2x.png in Resources */,
+				FA558A1017BC85B700732F3C /* InstagramCamera-568h@2x.png in Resources */,
+				FA558A1317BC86D800732F3C /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA10860B1762C46200CAA7C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FA10860C1762C46200CAA7C5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA1085DC1762C46100CAA7C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5589DC17BC7E0000732F3C /* UIImageView+GeometryConversion.h in Sources */,
+				FA5589DD17BC7E0000732F3C /* SSAssetLibraryFactory.h in Sources */,
+				FA5589DE17BC7E0000732F3C /* SSAssetLibraryFactory.m in Sources */,
+				FA5589DF17BC7E0000732F3C /* SSLoadAsset.h in Sources */,
+				FA5589E017BC7E0000732F3C /* SSLoadAsset.m in Sources */,
+				FA5589E117BC7E0000732F3C /* SSUtils.h in Sources */,
+				FA5589E217BC7E0000732F3C /* SSUtils.m in Sources */,
+				FA5589E317BC7E0000732F3C /* ALAsset+SSAssetEqual.h in Sources */,
+				FA5589E417BC7E0000732F3C /* ALAsset+SSAssetEqual.m in Sources */,
+				FA5589D817BC7DF400732F3C /* SSAddObjectViewController.h in Sources */,
+				FA5589D917BC7DF400732F3C /* SSAddObjectViewController.m in Sources */,
+				FA5589DA17BC7DF400732F3C /* SSCameraViewController.h in Sources */,
+				FA5589DB17BC7DF400732F3C /* SSCameraViewController.m in Sources */,
+				FA5589D717BC7DE400732F3C /* SSAppDelegate.h in Sources */,
+				FA5589CE17BC7B5600732F3C /* UIImageView+GeometryConversion.m in Sources */,
+				FA5589D017BC7BD000732F3C /* main.m in Sources */,
+				FA5589D617BC7DD000732F3C /* SSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1086091762C46200CAA7C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA1086151762C46200CAA7C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA1085DF1762C46100CAA7C5 /* InstagramCamera */;
+			targetProxy = FA1086141762C46200CAA7C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA558A1117BC86D800732F3C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA558A1217BC86D800732F3C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA10861F1762C46200CAA7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA1086201762C46200CAA7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA1086221762C46200CAA7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstagramCamera/InstagramCamera-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"TestOut=0",
+				);
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				INFOPLIST_FILE = "InstagramCamera/InstagramCamera-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = InstagramCamera;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA1086231762C46200CAA7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Alexander Semeshchenko";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Alexander Semeshchenko";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstagramCamera/InstagramCamera-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "TestOut=1";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				INFOPLIST_FILE = "InstagramCamera/InstagramCamera-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = InstagramCamera;
+				PROVISIONING_PROFILE = "567ECC1A-E35D-44E9-823E-C247F47AC6C8";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "567ECC1A-E35D-44E9-823E-C247F47AC6C8";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FA1086251762C46200CAA7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SmartStuffSwap.app/SmartStuffSwap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartStuffSwap/SmartStuffSwap-Prefix.pch";
+				INFOPLIST_FILE = "SmartStuffSwapTests/SmartStuffSwapTests-Info.plist";
+				PRODUCT_NAME = InstagramCameraTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FA1086261762C46200CAA7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SmartStuffSwap.app/SmartStuffSwap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartStuffSwap/SmartStuffSwap-Prefix.pch";
+				INFOPLIST_FILE = "SmartStuffSwapTests/SmartStuffSwapTests-Info.plist";
+				PRODUCT_NAME = InstagramCameraTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA1085DB1762C46100CAA7C5 /* Build configuration list for PBXProject "InstagramCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA10861F1762C46200CAA7C5 /* Debug */,
+				FA1086201762C46200CAA7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1086211762C46200CAA7C5 /* Build configuration list for PBXNativeTarget "InstagramCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1086221762C46200CAA7C5 /* Debug */,
+				FA1086231762C46200CAA7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1086241762C46200CAA7C5 /* Build configuration list for PBXNativeTarget "InstagramCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1086251762C46200CAA7C5 /* Debug */,
+				FA1086261762C46200CAA7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA1085D81762C46100CAA7C5 /* Project object */;
+}
